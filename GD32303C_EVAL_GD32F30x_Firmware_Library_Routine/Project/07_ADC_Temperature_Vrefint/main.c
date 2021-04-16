@@ -138,7 +138,7 @@ void adc_config(void)
     /* ADC regular channel config */
     adc_regular_channel_config(ADC0, 0,  ADC_CHANNEL_13 , ADC_SAMPLETIME_55POINT5);//采样时间；55.5个ADC工作周期
     /* ADC trigger config */
-    adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_2_EXTTRIG_REGULAR_NONE);//
+    adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_2_EXTTRIG_REGULAR_NONE);//触发条件 none是不使用外部触发，只使用软件触发
     adc_external_trigger_config(ADC0, ADC_REGULAR_CHANNEL, ENABLE);   //配置adc外部触发
     
     /* enable ADC interface */
